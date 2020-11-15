@@ -5,9 +5,9 @@ se agregaran nuevas varaibles a medida que cresca elproyecto
 */
 class global_variables{
 	protected $servername="localhost";
-	protected $username="hatchtem_YcIbY1Ud";
-	protected $password="YcIbY1Ud";
-	protected $db="hatchtem_YcIbY1Ud";
+	protected $username="root";
+	protected $password="";
+	protected $db="organizador_proyectos";
 
 	function get_servername(){
 		return $this->servername;
