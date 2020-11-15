@@ -1,7 +1,7 @@
 <?php 
 /*
 En este archivo se configuraran las variables globales para el proyecto
-
+se agregaran nuevas varaibles a medida que cresca elproyecto
 */
 class global_variables{
 	protected $servername="localhost";
