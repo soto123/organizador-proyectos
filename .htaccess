@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine on
+RewriteBase /organizador-proyectos/
+
+RewriteRule ^api/(.*)/(.*)/$ api.php?objeto=$1&id=$2 [L]
+RewriteRule ^api/(.*)/$ api.php?objeto=$1 [L]
+
+
+RewriteRule ^tablero/$ tablero.php [L]

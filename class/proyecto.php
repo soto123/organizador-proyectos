@@ -119,6 +119,16 @@ class proyecto
 			return false;
 		}
 	}
+
+	function object_to_json(){
+		$objeto = [];
+		$objeto["id"] = $this->id;
+		$objeto["nombre"] = $this->nombre;
+		$objeto["imagen"] = $this->imagen;
+		$objeto["estado"] = $this->estado;
+
+		return $objeto;
+	}
 }
 
 ?>

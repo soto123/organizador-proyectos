@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <!doctype html>
 <html lang="es">
+  <?php 
+  include_once("class/proyecto.php");
+  $proyecto = new proyecto();
+
+  $proyectos = $proyecto->get_all();
+
+  ?>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,14 +22,34 @@
   		<div class="row">
   			<div class="col-md-3 bg-dark pt-5 pb-5 pl-0 pr-0">
   				<ul class="nav flex-column">
-  					<li class="nav-item"><a href="#" class="nav-link">Principal</a></li>
+  					<li class="nav-item"><a href="#" class="nav-link active">Principal</a></li>
   					<li class="nav-item"><a href="#" class="nav-link">Proyectos</a></li>
   					<li class="nav-item"><a href="#" class="nav-link">Usuarios</a></li>
   					<li class="nav-item"><a href="#" class="nav-link">Estados</a></li>
   				</ul>
   			</div>
   			<div class="col-md-9">
-  				
+  				<div class="row">
+            <div class="col-12">
+              <p class="h1">Nuestros proyectos</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="#">id</th>
+                    <th scope="#">Nombre</th>
+                    <th scope="#">Estado</th>  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</td>
+                    <td>Proyecto 1</td>
+                    <td>Estado</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
   			</div>
   		</div>
   	</div>
