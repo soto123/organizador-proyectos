@@ -9,6 +9,8 @@ if(isset($_POST) && $_POST != []){
 		if(isset($_GET['id'])){
 			$current = ${$_GET['objeto']}->get_by_id($_GET['id']);
 			echo json_encode(${$_GET['objeto']}->object_to_json());
+		}else{
+			//entregar todos
 		}
 	}
 }else{
