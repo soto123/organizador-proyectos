@@ -7,10 +7,15 @@ if(isset($_POST) && $_POST != []){
 		include_once("class/".$_GET['objeto'].".php");
 		${$_GET['objeto']} = new $_GET['objeto']();
 		if(isset($_GET['id'])){
-			$current = ${$_GET['objeto']}->get_by_id($_GET['id']);
+			${$_GET['objeto']}->get_by_id($_GET['id']);
+			var_dump(${$_GET['objeto']});
 			echo json_encode(${$_GET['objeto']}->object_to_json());
 		}else{
-			//entregar todos
+			$array = [];
+			foreach (${$_GET['objeto']}->get_all() as $objeto) {
+				$array[] = $objeto->object_to_json();
+			}
+			echo json_encode($array);
 		}
 	}
 }else{

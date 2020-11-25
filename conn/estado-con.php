@@ -17,13 +17,14 @@ class estado_con
 	// Create connection
 	protected function conectar(){
 		$conn = new mysqli($this->servername, $this->username, $this->password, $this->db);
+		
 		// Check connection
 		if ($conn->connect_error) {
 		    die("Connection failed: " . $conn->connect_error);
 		} 
 		$sql = "SELECT * FROM estados";
 		$result = $conn->query($sql);
-		
+		$conn->set_charset("utf8");
 		return $conn;
 	}
 	function get_estados(){
