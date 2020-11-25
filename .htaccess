@@ -2,8 +2,11 @@ Options +FollowSymLinks
 RewriteEngine on
 RewriteBase /organizador-proyectos/
 
+RewriteRule ^api/(.*)/(.*)/(.*)/update/(.*)/$ api.php?objeto=$1&id=$2&att=$3&update=1&val=$4 [L]
+RewriteRule ^api/(.*)/(.*)/(.*)/$ api.php?objeto=$1&id=$2&att=$3 [L]
 RewriteRule ^api/(.*)/(.*)/$ api.php?objeto=$1&id=$2 [L]
 RewriteRule ^api/(.*)/$ api.php?objeto=$1 [L]
 
 
+RewriteRule ^tablero$ tablero.php [L]
 RewriteRule ^tablero/$ tablero.php [L]
