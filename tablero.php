@@ -6,6 +6,10 @@
   $proyecto = new proyecto();
 
   $proyectos = $proyecto->get_all();
+  
+  foreach ($proyectos as $elemento) {
+    var_dump($elemento);
+  }
 
   ?>
   <head>
