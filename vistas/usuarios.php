@@ -5,31 +5,37 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Tablero - organizador</title>
+    <title>Tablero - proyectos</title>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body class=" h-100">
 	<div id="app-7" class="h-100">
 		<div class="container-fluid h-100">
 			<div class="row h-100">
+				<?php 
+				include_once('nav-admin.php')
+				?>
+				<!--
 				<div class="bg-dark col-md-3 h-100">
 					<img src="https://www.hatchtemuco.com/img/LogoTransaparente.png" alt="logo hatch" class="img-fluid p-5">
 					<nav class="nav flex-column">
-						<a class="nav-link text-white border active" href="#">Home</a>
-						<a class="nav-link text-white border" href="#">Estados</a>
-						<a class="nav-link text-white border" href="#">Proyectos</a>
+						<a class="nav-link text-white border " href="#">Home</a>
+						<a class="nav-link text-white border" href="http://localhost/hatch/organizador-proyectos/vistas/estados/">Estados</a>
+						<a class="nav-link text-dark bg-white border" href="http://localhost/hatch/organizador-proyectos/vistas/proyectos/">Proyectos</a>
 						<a class="nav-link text-white border" href="#">Usuarios</a>
 						<a class="nav-link text-white border" href="#">Salir</a>
 					</nav>
 				</div>
+				-->
 				<div class="bg-white pt-5 col-md-9">
+					<p class="h3 pb-3">Usuarios activos</p>
 					<table class="table table-striped ">
 					  <thead>
 					    <tr>
 					      <th scope="col">ID</th>
 					      <th scope="col">Nombre</th>
 					      <th scope="col">imagen</th>
-					      <th scope="col">Otro</th>
+					      <th scope="col">correo</th>
 					    </tr>
 					  </thead>
 					  <tbody class="">
@@ -38,7 +44,7 @@
 					    	<th>{{item.id}}</th>
 					    	<td>{{item.nombre}}</td>
 					    	<td>{{item.imagen}}</td>
-					    	<td>estado</td>
+					    	<td>{{item.correo}}</td>
 					    </tr>
 					  </tbody>
 					</table>
@@ -62,7 +68,7 @@
 	  el: '#app-7',
 	  data: {
 	    groceryList: [
-	      { id: 0, nombre: '', imagen: '' }
+	      
 	    ]
 	  },
 	  methods: {
@@ -75,7 +81,7 @@
 			       data_new = this.responseText;
 			    }
 			};
-			xhttp.open("GET", "http://localhost/hatch/organizador-proyectos/api/estado/", false);
+			xhttp.open("GET", "http://localhost/hatch/organizador-proyectos/api/usuario/", false);
 			xhttp.send();
 			this.groceryList = JSON.parse(data_new);
 			console.log(this.data);

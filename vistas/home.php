@@ -12,17 +12,27 @@
 	<div id="app-7" class="h-100">
 		<div class="container-fluid h-100">
 			<div class="row h-100">
-				<div class="bg-dark col-md-3 h-100">
-					<img src="https://www.hatchtemuco.com/img/LogoTransaparente.png" alt="logo hatch" class="img-fluid p-5">
-					<nav class="nav flex-column">
-						<a class="nav-link text-white border active" href="#">Home</a>
-						<a class="nav-link text-white border" href="#">Estados</a>
-						<a class="nav-link text-white border" href="#">Proyectos</a>
-						<a class="nav-link text-white border" href="#">Usuarios</a>
-						<a class="nav-link text-white border" href="#">Salir</a>
-					</nav>
-				</div>
+				<?php 
+				include_once('nav-admin.php')
+				?>
 				<div class="bg-white pt-5 col-md-9">
+					<p class="h3 pb-3">Inicio</p>
+					<div class="row">
+						<div class="col-6 p-5 ">
+							<div class="card bg-light">
+						      <div class="card-body">
+						        <h5 class="card-title">Total de XXXXXX:</h5>
+						        <p class="card-text h3">XX activos.</p>
+						        <a href="#" class="btn btn-primary">Ver más...</a>
+						      </div>
+						    </div>
+						    <!--
+							<p class="h4">Total de xxx :</p>
+							<p class="h2">XXX</p>
+							<button>Ver más...</button>
+							-->
+						</div>
+					</div>
 					<table class="table table-striped ">
 					  <thead>
 					    <tr>
