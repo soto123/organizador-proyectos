@@ -37,12 +37,14 @@ class estado
 
 	function get_by_id( $id ){
 		$conn = new estado_con();
-		$this->id = $id;
-		$results = $conn->get_by_id($this->id);
+		$results = $conn->get_by_id($id);
 		foreach ($results as $estado) {
+			$this->id = $id;
 			$this->nombre = $estado['nombre'];
 			$this->imagen = $estado['imagen'];
+			return true;
 		}
+		return false;
 	}
 
 	function get_all(){
@@ -62,7 +64,12 @@ class estado
 	}
 	function add(){
 		$conn = new estado_con();
-		return $conn->add($this->nombre, $this->imagen);
+		foreach ($conn->add($this->nombre, $this->imagen) as $result) {
+			if($result != false){
+				return $result['LAST_INSERT_ID()'];
+			}
+			return $result;
+		}
 
 	}
 	function update(){
@@ -77,6 +84,10 @@ class estado
 		$objeto["imagen"] = $this->imagen;
 
 		return $objeto;
+	}
+	function delete(){
+		$conn = new estado_con();
+		return $conn->delete($this->id);
 	}
 }
 

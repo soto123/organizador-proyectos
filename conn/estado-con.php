@@ -60,7 +60,18 @@ class estado_con
 
 		$sql = "INSERT INTO `estados` (`id`, `nombre`, `imagen`) VALUES (NULL, '$nombre', '$imagen');";
 		$result = $conn->query($sql);
+		if($result){
+			$sql = "SELECT LAST_INSERT_ID();";
+			$result = $conn->query($sql);
+		}
 		return $result;
+	}
+	function delete( $id ){
+		$conn=$this->conectar();
+		$sql = "DELETE FROM `estados` WHERE `estados`.`id` = $id;";
+
+		$result = $conn->query($sql);
+		return $result;	
 	}
 }
 ?>
