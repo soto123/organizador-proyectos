@@ -1,5 +1,5 @@
 <?php 
-require_once ("./conn/tareas-con.php");
+require_once ("./conn/tarea-con.php");
 
 class tarea
 {
@@ -60,7 +60,9 @@ class tarea
 			$this->proyecto = $publicacion['proyecto'];
 			$this->prioridad = $publicacion['prioridad'];
 			$this->estado = $publicacion['estado'];
+			return true;
 		}
+		return false;
 	}
 
 	function get_all(){
@@ -99,12 +101,12 @@ class tarea
 	}
 	function add(){
 		$conn = new tarea_con();
-		return $conn->add($this->nombre, $this->proyecto,, $this->prioridad, $this->estado);
+		return $conn->add($this->nombre, $this->proyecto, $this->prioridad, $this->estado);
 
 	}
 	function update(){
 		$conn = new tarea_con();
-		return $conn->update($this->id,$this->nombre, $this->proyecto,, $this->prioridad, $this->estado);
+		return $conn->update($this->id,$this->nombre, $this->proyecto, $this->prioridad, $this->estado);
 	}
 
 	function object_to_json(){

@@ -64,13 +64,16 @@ class proyecto
 
 	function get_by_id( $id ){
 		$conn = new proyecto_con();
-		$this->id = $id;
-		$results = $conn->get_by_id($this->id);
+		$results = $conn->get_by_id($id);
 		foreach ($results as $publicacion) {
+			$this->id = $id;
 			$this->nombre = $publicacion['nombre'];
 			$this->imagen = $publicacion['imagen'];
 			$this->estado = $publicacion['estado'];
+			return true;
 		}
+		return false;
+
 	}
 
 	function get_all(){
@@ -91,12 +94,16 @@ class proyecto
 	}
 	function add(){
 		$conn = new proyecto_con();
-		return $conn->add($this->nombre, $this->imagen);
+		return $conn->add($this->nombre,$this->imagen,$this->estado);
 
 	}
 	function update(){
 		$conn = new proyecto_con();
 		return $conn->update($this->id,$this->nombre,$this->imagen,$this->estado);
+	}
+	function delete(){
+		$conn = new proyecto_con();
+		return $conn->delete($this->id);
 	}
 	function subir_etapa( $id ){
 		$this->get_by_id($id);

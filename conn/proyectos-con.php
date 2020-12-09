@@ -41,7 +41,7 @@ class proyecto_con
 
 		$conn=$this->conectar();
 
-		$sql = "SELECT * FROM proyectos WHERE `id`=$id";
+		$sql = "SELECT * FROM proyectos WHERE `proyectos`.`id`=$id";
 
 		$result = $conn->query($sql);
 		
@@ -54,10 +54,24 @@ class proyecto_con
 		$result = $conn->query($sql);
 		return $result;	
 	}
-	function add( $nombre, $imagen ){
-		return $nombre.' / '.$imagen;
-	}
+	function add( $nombre,$imagen,$estado ){
+		$conn = $this->conectar();
 
+		$sql = "INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `estado`) VALUES (NULL, '$nombre', '$imagen',0);";
+		$result = $conn->query($sql);
+		if($result){
+			$sql = "SELECT LAST_INSERT_ID();";
+			$result = $conn->query($sql);
+		}
+		return $result;
+	}
+	function delete( $id ){
+		$conn=$this->conectar();
+		$sql = "DELETE FROM `proyectos` WHERE `proyectos`.`id` = $id;";
+
+		$result = $conn->query($sql);
+		return $result;	
+	}
 	function subir_etapa( $id ){
 		
 	}

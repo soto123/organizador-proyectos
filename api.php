@@ -32,10 +32,14 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 		if(isset($_GET['id'])){
 			if(${$_GET['objeto']}->get_by_id($_GET['id'])){
 				if(isset($_GET['att'])){
-					if(isset($_GET['update'])){//isset update
-						$func = 'set_'.$_GET['att'];
-						${$_GET['objeto']}->{$func}($_GET['val']);
-						var_dump(${$_GET['objeto']}->update());
+					if(isset($_GET['att_v'])){//isset get by attribute
+						$func = 'get_by_'.$_GET['att'];
+						$objetos = ${$_GET['objeto']}->{$func}($_GET['att_v']);
+						$array = [];
+						foreach ($objetos as $objeto) {
+							$array[] = $objeto->object_to_json();
+						}
+						echo json_encode($array);
 					}else{
 						$func = 'get_'.$_GET['att'];
 						echo ${$_GET['objeto']}->{$func}();
