@@ -9,7 +9,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body class=" h-100">
-	<div id="app-7" class="h-100">
+	<div id="vista-proyectos" class="h-100">
 		<div class="container-fluid h-100">
 			<div class="row h-100">
 				<?php 
@@ -36,6 +36,7 @@
 					      <th scope="col">Nombre</th>
 					      <th scope="col">imagen</th>
 					      <th scope="col">estado</th>
+					      <th scope="col">Acciones</th>
 					    </tr>
 					  </thead>
 					  <tbody class="">
@@ -45,6 +46,10 @@
 					    	<td>{{item.nombre}}</td>
 					    	<td>{{item.imagen}}</td>
 					    	<td>{{item.estado}}</td>
+					    	<td class="align-middle">
+					    		<button type="button" class="btn btn-warning mr-3 mt-1 mb-1">Editar</button>
+					    		<button type="button" class="btn btn-danger  mt-1 mb-1" @click="eliminar_estado(item)">Eliminar</button>
+					    	</td>
 					    </tr>
 					  </tbody>
 					</table>
@@ -53,7 +58,7 @@
 			</div>
 		
 		</div>
-		<!-- <button v-on:click="getDatos">Reverse Message</button> -->
+
 	  	
 	</div>
 	<script type="text/javascript">
@@ -65,7 +70,7 @@
 	})
 
 	var app7 = new Vue({
-	  el: '#app-7',
+	  el: '#vista-proyectos',
 	  data: {
 	    groceryList: [
 	      
