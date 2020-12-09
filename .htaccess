@@ -1,6 +1,7 @@
 Options +FollowSymLinks
 RewriteEngine on
-RewriteBase /hatch/organizador-proyectos/
+#RewriteBase /hatch/organizador-proyectos/
+RewriteBase /
 
 RewriteRule ^api/(.*)/(.*)/(.*)/(.*)/$ api.php?objeto=$1&id=$2&att=$3&att_v=$4 [L]
 RewriteRule ^api/(.*)/(.*)/(.*)/$ api.php?objeto=$1&id=$2&att=$3 [L]
