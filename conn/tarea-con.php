@@ -63,10 +63,23 @@ class tarea_con
 		$result = $conn->query($sql);
 		return $result;
 	}
-	function add( $nombre, $imagen ){
-		return $nombre.' / '.$imagen;
-	}
+	function add( $nombre,$proyecto,$prioridad,$estado ){
+		$conn = $this->conectar();
 
+		$sql = "INSERT INTO `tareas` (`id`, `nombre`, `proyecto`, `prioridad`, `estado`) VALUES (NULL, '$nombre', $proyecto,$prioridad,$estado);";
+		$result = $conn->query($sql);
+		if($result){
+			$sql = "SELECT LAST_INSERT_ID();";
+			$result = $conn->query($sql);
+		}
+		return $result;
+	}
+	function delete( $id ){
+		$conn=$this->conectar();
+		$sql = "DELETE FROM `tareas` WHERE `tareas`.`id` = $id;";
+		$result = $conn->query($sql);
+		return $result;	
+	}
 	function cambiar_estado( $id ){
 		$conn=$this->conectar();
 		$sql = "UPDATE `tareas` SET `estado`='$estado' WHERE `tareas`.`id` = $id;";

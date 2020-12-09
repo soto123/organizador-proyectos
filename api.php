@@ -13,8 +13,17 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 	
 }else if($_SERVER['REQUEST_METHOD'] == 'PUT'){
 
-}else if($_SERVER['REQUEST_METHOD'] == 'PATCH'){
-
+}else if($_SERVER['REQUEST_METHOD'] == 'PATCH'){//parcial
+	
+	include_once("class/".$_GET['objeto'].".php");
+	${$_GET['objeto']} = new $_GET['objeto']();
+	if(${$_GET['objeto']}->get_by_id($_GET['id'])){
+		$func = 'set_'.$_GET['att'];
+		${$_GET['objeto']}->{$func}($_GET['att_v']);
+		var_dump(${$_GET['objeto']}->update());
+	}else{
+		echo "No existe";
+	}
 }else if(isset($_POST) && $_POST != []){
 	include_once("class/".$_GET['objeto'].".php");
 	${$_GET['objeto']} = new $_GET['objeto']();
@@ -23,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 		$func = 'set_'.$field;
 		${$_GET['objeto']}->{$func}($_POST[$field]);
 	}
-	var_dump(${$_GET['objeto']}->add());
+	echo(${$_GET['objeto']}->add());
 	http_response_code(201);	
 }else if(isset($_GET) && $_GET != []){
 	if(isset($_GET['objeto'])){

@@ -101,12 +101,18 @@ class tarea
 	}
 	function add(){
 		$conn = new tarea_con();
-		return $conn->add($this->nombre, $this->proyecto, $this->prioridad, $this->estado);
-
+		foreach ($conn->add($this->nombre, $this->proyecto, $this->prioridad, $this->estado) as $id_last) {
+			return $id_last["LAST_INSERT_ID()"];
+		}
+		return false;
 	}
 	function update(){
 		$conn = new tarea_con();
 		return $conn->update($this->id,$this->nombre, $this->proyecto, $this->prioridad, $this->estado);
+	}
+	function delete(){
+		$conn = new tarea_con();
+		return $conn->delete($this->id);
 	}
 
 	function object_to_json(){

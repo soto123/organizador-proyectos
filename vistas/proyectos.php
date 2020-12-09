@@ -95,6 +95,7 @@
 								    <option value="30">Alta</option>
 								</select>
 							</div>
+							<button class="btn btn-success float-right" @click="agregar_tarea()">Agregar</button>
 			      		</div>
 			        	<table class="table table-striped">
 			        		<thead>
@@ -106,15 +107,21 @@
 						      <th scope="col">Acciones</th>
 						    </tr>
 						  </thead>
-			        		<tr v-for="item in tareas" v-bind:todo="item" v-bind:key="item.id">
+			        		<tr v-for="item in tareas" v-bind:todo="item" v-bind:key="item.id" :class="item.estado == 0 ? 'incompleto' : 'text-muted font-italic bg-light'">
 						    	<th>{{item.id}}</th>
 						    	<td>{{item.nombre}}</td>
-						    	<td>{{item.prioridad}}</td>
-						    	<td v-if="item.estado !== 1">Incompleta</td>
+
+						    	<td v-if="item.prioridad == 10">Baja</td>
+						    	<td v-else-if="item.prioridad == 20">Normal</td>
+						    	<td v-else="item.prioridad == 30">Alta</td>
+						    	
+
+						    	<td v-if="item.estado != 1">Incompleta</td>
 						    	<td v-else>Completa</td>
 						    	<td>
-						    		<button class="btn btn-success" @click="item.estado = 1" v-if="item.estado !== 1">Completar</button>
-						    		<button class="btn btn-danger" @click="item.estado = 0" v-else>Deshacer</button>
+						    		<button class="btn btn-success" @click="editar_estado_tarea(1, item)" v-if="item.estado != 1">Completar</button>
+						    		<button class="btn btn-danger" @click="editar_estado_tarea(0, item)" v-else>Deshacer</button>
+						    		<button class="btn btn-danger" @click="eliminar_tarea(item)" >Eliminar</button>
 						    	</td>
 						    </tr>
 			        	</table>
@@ -215,8 +222,60 @@
 			xhttp.send();
 	    },
 	    cambiar_estado: function( nuevo_estado ){
-	      		this.estado_pagina = nuevo_estado;
-	      	}
+	    	this.estado_pagina = nuevo_estado;
+	    },
+	    editar_estado_tarea: function ( nuevo_estado , item){
+	    	item.estado = nuevo_estado;
+	    	var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			       // Typical action to be performed when the document is ready:
+			       console.log(this.responseText + "response");
+			    }
+			};
+			xhttp.open("PATCH", "http://localhost/hatch/organizador-proyectos/api/tarea/"+item.id+"/estado/"+nuevo_estado+"/", false);
+			xhttp.send();
+	    },
+	    agregar_tarea: function(item){
+			var bool = false;
+	    	var formData = new FormData();
+			formData.append("nombre", this.nueva.nombre);
+			formData.append("proyecto", this.nueva.proyecto);
+			formData.append("prioridad", this.nueva.prioridad);
+			formData.append("estado", this.nueva.estado);
+	      	var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			       // Typical action to be performed when the document is ready:
+			       //console.log(this.responseText + "response");
+			    }
+			};
+			xhttp.open("POST", "http://localhost/hatch/organizador-proyectos/api/tarea/", false);
+			xhttp.send(formData);
+
+			if(xhttp.responseText != false ){
+				this.cargar_proyecto(this.proyecto_seleccionado);
+			}else{
+			  	console.log("Error al guardar");
+			}
+
+			this.nueva.nombre = '';
+			this.nueva.prioridad = '10';
+		},
+		eliminar_tarea: function( item ){
+	      	console.log(item);
+	      	console.log("http://localhost/hatch/organizador-proyectos/api/tarea/"+item.id+"/");
+	      	var xhttp = new XMLHttpRequest();
+			xhttp.onreadystatechange = function() {
+			    if (this.readyState == 4 && this.status == 200) {
+			       // Typical action to be performed when the document is ready:
+			       console.log("enviado");
+			    }
+			};
+			xhttp.open("DELETE", "http://localhost/hatch/organizador-proyectos/api/tarea/"+item.id+"/", false);
+			xhttp.send();
+			this.cargar_proyecto(this.proyecto_seleccionado);
+	    }
 	  },
 	  mounted: function () {
 		  this.$nextTick(function () {
