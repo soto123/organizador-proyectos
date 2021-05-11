@@ -58,14 +58,18 @@
 					      <th scope="col">Otro</th>
 					    </tr>
 					  </thead>
-					  <tbody class="">
+					  <tbody class="" id="contenido-tabla">
 
+					    <!--
 					    <tr v-for="item in proyectos" v-bind:todo="item" v-bind:key="item.id">
 					    	<th>{{item.id}}</th>
 					    	<td><img :src="item.imagen"></td>
 					    	<td>{{item.nombre}}</td>
 					    	<td>{{get_estado_by_id(item)}} </td>
 					    </tr>
+						-->
+						
+					    <tr is="todo-item" v-for="item in proyectos" v-bind:key="item.id" v-bind:todo="item"></todo-item>
 					  </tbody>
 					</table>
 					
@@ -85,66 +89,63 @@
 	</style>
 	<script type="text/javascript">
 	
-
+		
 	Vue.component('todo-item', {
 	  props: ['todo'],
-	  template: '<tr><th scope="row">3</th><td>{{ todo.nombre }}</td><td>the Bird</td><td>@twitter</td></tr>'
-	})
+	  template: '<tr><th>{{todo.id}}</th><td>{{todo.nombre}}</td><td>{{todo.imagen}}</td><td>{{todo.estado}}</td></tr>'
+	});
 
 	var app7 = new Vue({
-	  el: '#app-7',
-	  data: {
-	    proyectos: [],
-	    usuarios: [],
-	    tareas: [],
-	    estados: []
-
-	  },
-	  computed:{
-	  	contar_proyectos( ){
-	  		return this.proyectos.length;
+	  	el: '#app-7',
+	  	data: {
+		    proyectos: [],
+		    usuarios: [],
+		    tareas: [],
+		    estados: []
+		},
+		computed:{
+		  	contar_proyectos( ){
+		  		return this.proyectos.length;
+		  	},
+		  	contar_tareas_pendientes( ){
+		  		var counter = 0;
+		  		for (var i = this.tareas.length - 1; i >= 0; i--) {
+		  			if(this.tareas[i].estado == 0){
+		  				counter++;
+		  			}
+		  		}
+		  		return counter;
+		  	},
+		  	contar_usuarios( ){
+		  		return this.usuarios.length;
+		  	},
 	  	},
-	  	contar_tareas_pendientes( ){
-	  		var counter = 0;
-	  		for (var i = this.tareas.length - 1; i >= 0; i--) {
-	  			if(this.tareas[i].estado == 0){
-	  				counter++;
-	  			}
-	  		}
-	  		return counter;
-	  	},
-	  	contar_usuarios( ){
-	  		return this.usuarios.length;
-	  	},
-	  },
-	  methods: {
-	    getDatos: function () {
-	      	var data_new2 = '';
-			var xhttp2 = new XMLHttpRequest();
-			xhttp2.onreadystatechange = function() {
-			    if (this.readyState == 4 && this.status == 200) {
-			       // Typical action to be performed when the document is ready:
-			       data_new2 = this.responseText;
-			    }
-			};
-			xhttp2.open("GET", "http://proyectos.hatchtemuco.com/api/proyecto/", false);
-			xhttp2.send();
-			this.proyectos = JSON.parse(data_new2);
+	 	methods: {
+		    getDatos: function () {
+		      	var data_new2 = '';
+				var xhttp2 = new XMLHttpRequest();
+				xhttp2.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				       // Typical action to be performed when the document is ready:
+				       data_new2 = this.responseText;
+				    }
+				};
+				xhttp2.open("GET", "http://proyectos.hatchtemuco.com/api/proyecto/", false);
+				xhttp2.send();
+				this.proyectos = JSON.parse(data_new2);
+		    },
+		    get_estado_by_id: function( item ){
+		    	var texto = 'Estado desconocido';
+		    	for (var i = this.estados.length - 1; i >= 0; i--) {
+		    		if(this.estados[i]['id'] == item.estado ){
+		    			texto = this.estados[i].nombre;
+		    		}
+		    	}
 
-					
-	    },
-	    get_estado_by_id: function( item ){
-	    	var texto = 'Estado desconocido';
-	    	for (var i = this.estados.length - 1; i >= 0; i--) {
-	    		if(this.estados[i]['id'] == item.estado ){
-	    			texto = this.estados[i].nombre;
-	    		}
-	    	}
-
-	    	return texto;
-	    }
-	  },
-	  mounted: function () {
+		    	return texto;
+		    }
+	  	},
+	  	mounted: function () {
 		  this.$nextTick(function () {
 		    window.setInterval(() => {
 	            this.getDatos();
@@ -185,8 +186,9 @@
 			xhttp4.open("GET", "http://proyectos.hatchtemuco.com/api/usuario/", false);
 			xhttp4.send();
 			this.usuarios = JSON.parse(data_new4);	
-	}
-	})
+		}
+	});
+	
 </script>
 </body>
 </html>

@@ -34,12 +34,15 @@
 					  </thead>
 					  <tbody class="">
 
+					    <!--
 					    <tr v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id">
 					    	<th>{{item.id}}</th>
 					    	<td>{{item.nombre}}</td>
 					    	<td>{{item.imagen}}</td>
 					    	<td>estado</td>
 					    </tr>
+					-->
+					    <fila-proyecto v-for="item in groceryList" v-bind:nombre="item.nombre" v-bind:imagen="item.imagen" v-bind:estado="item.estado" v-bind:id="item.id"></fila-proyecto>
 					  </tbody>
 					</table>
 					
@@ -56,7 +59,22 @@
 	Vue.component('todo-item', {
 	  props: ['todo'],
 	  template: '<tr><th scope="row">3</th><td>{{ todo.nombre }}</td><td>the Bird</td><td>@twitter</td></tr>'
-	})
+	});
+
+	app7.component("fila-proyecto",{
+		props:{
+			id: String,
+			nombre: String,
+			imagen: String,
+			estado: String,
+		},
+		templates:`
+		<tr>
+		   	<th>{{id}}</th>
+		   	<td>{{nombre}}</td>
+		   	<td>{{imagen}}</td>
+		   	<td>{{estado}}</td>
+		</tr>`});
 
 	var app7 = new Vue({
 	  el: '#app-7',
