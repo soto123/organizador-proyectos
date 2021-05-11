@@ -24,7 +24,7 @@
 					    <tr>
 					      <th scope="col">ID</th>
 					      <th scope="col">Nombre</th>
-					      <th scope="col">imagen</th>
+					      <th scope="col">Coordinador</th>
 					      <th scope="col">Otro</th>
 					    </tr>
 					  </thead>
@@ -33,7 +33,7 @@
 					    <tr v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id">
 					    	<th class="align-middle">{{item.id}}</th>
 					    	<td class="align-middle">{{item.nombre}}</td>
-					    	<td class="align-middle"><img src="{{item.imagen}}" ></td>
+					    	<td class="align-middle">{{item.coordinador}}</td>
 					    	<td class="align-middle">
 					    		<button type="button" class="btn btn-warning mr-3 mt-1 mb-1">Editar</button>
 					    		<button type="button" class="btn btn-danger  mt-1 mb-1" @click="eliminar_estado(item)">Eliminar</button>
@@ -98,7 +98,7 @@
 			       data_new = this.responseText;
 			    }
 			};
-			xhttp.open("GET", "http://proyectos.hatchtemuco.com/api/estado/", false);
+			xhttp.open("GET", "http://proyectos.hatchtemuco.com/api/equipo/", false);
 			xhttp.send();
 			this.groceryList = JSON.parse(data_new);
 			console.log(this.data);
@@ -112,7 +112,7 @@
 			       console.log("enviado");
 			    }
 			};
-			xhttp.open("DELETE", "http://proyectos.hatchtemuco.com/api/estado/"+item.id+"/", false);
+			xhttp.open("DELETE", "http://proyectos.hatchtemuco.com/api/equipo/"+item.id+"/", false);
 			xhttp.send();
 			
 	    },
@@ -130,7 +130,7 @@
 			       console.log(this.responseText);
 			    }
 			};
-			xhttp.open("POST", "http://proyectos.hatchtemuco.com/api/estado/", false);
+			xhttp.open("POST", "http://proyectos.hatchtemuco.com/api/equipo/", false);
 			xhttp.send(formData);
 
 			if(bool  != false ){

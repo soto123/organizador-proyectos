@@ -8,6 +8,8 @@ class tarea
 	protected $proyecto;
 	protected $prioridad;
 	protected $estado;
+	protected $comentario;
+	protected $equipo;
 
 	function __construct() {
 	    $this->id = 0;
@@ -15,6 +17,8 @@ class tarea
 	    $this->proyecto = 0;
 	    $this->prioridad = 0;
 	    $this->estado = 0;
+	    $this->comentario = '';
+	    $this->equipo = 0;
 	}
 
 
@@ -33,6 +37,12 @@ class tarea
 	function set_estado($estado){
 		$this->estado = $estado;
 	}
+	function set_comentario($comentario){
+		$this->comentario = $comentario;
+	}
+	function set_equipo($equipo){
+		$this->equipo = $equipo;
+	}
 
 
 	function get_id(){
@@ -50,6 +60,12 @@ class tarea
 	function get_estado(){
 		return $this->estado;
 	}
+	function get_comentario(){
+		return $this->comentario;
+	}
+	function get_equipo(){
+		return $this->equipo;
+	}
 
 	function get_by_id( $id ){
 		$conn = new tarea_con();
@@ -60,6 +76,8 @@ class tarea
 			$this->proyecto = $publicacion['proyecto'];
 			$this->prioridad = $publicacion['prioridad'];
 			$this->estado = $publicacion['estado'];
+			$this->comentario = $publicacion['comentario'];
+			$this->equipo = $publicacion['equipo'];
 			return true;
 		}
 		return false;
@@ -77,6 +95,8 @@ class tarea
 			$tarea->set_proyecto($result['proyecto']);
 			$tarea->set_prioridad($result['prioridad']);
 			$tarea->set_estado($result['estado']);
+			$tarea->set_comentario($result['comentario']);
+			$tarea->set_equipo($result['equipo']);
 			$tareas[] = $tarea;
 		}
 		return $tareas;
@@ -94,6 +114,8 @@ class tarea
 			$tarea->set_proyecto($result['proyecto']);
 			$tarea->set_prioridad($result['prioridad']);
 			$tarea->set_estado($result['estado']);
+			$tarea->set_comentario($result['comentario']);
+			$tarea->set_equipo($result['equipo']);
 			$tareas[] = $tarea;
 		}
 		return $tareas;
@@ -101,14 +123,14 @@ class tarea
 	}
 	function add(){
 		$conn = new tarea_con();
-		foreach ($conn->add($this->nombre, $this->proyecto, $this->prioridad, $this->estado) as $id_last) {
+		foreach ($conn->add($this->nombre, $this->proyecto, $this->prioridad, $this->estado, $this->comentario, $this->equipo) as $id_last) {
 			return $id_last["LAST_INSERT_ID()"];
 		}
 		return false;
 	}
 	function update(){
 		$conn = new tarea_con();
-		return $conn->update($this->id,$this->nombre, $this->proyecto, $this->prioridad, $this->estado);
+		return $conn->update($this->id,$this->nombre, $this->proyecto, $this->prioridad, $this->estado, $this->comentario, $this->equipo);
 	}
 	function delete(){
 		$conn = new tarea_con();
@@ -122,6 +144,8 @@ class tarea
 		$objeto["proyecto"] = $this->proyecto;
 		$objeto["prioridad"] = $this->prioridad;
 		$objeto["estado"] = $this->estado;
+		$objeto["comentario"] = $this->comentario;
+		$objeto["equipo"] = $this->equipo;
 
 		return $objeto;
 	}

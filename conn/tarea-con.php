@@ -56,17 +56,18 @@ class tarea_con
 		
 		return $result;	
 	}
-	function update($id,$nombre,$proyecto,$prioridad,$estado){
+	function update($id,$nombre,$proyecto,$prioridad,$estado,$comentario,$equipo){
 		$conn=$this->conectar();
-		$sql = "UPDATE `tareas` SET `proyecto` = '$proyecto', `prioridad` = '$prioridad', `nombre`='$nombre', `estado`='$estado' WHERE `tareas`.`id` = $id;";
-
+		$sql = "UPDATE `tareas` SET `proyecto` = '$proyecto', `prioridad` = '$prioridad', `nombre`='$nombre', `estado`='$estado', `comentario` = '$comentario', `equipo` = '$equipo' WHERE `tareas`.`id` = $id;";
+		var_dump($sql);
 		$result = $conn->query($sql);
 		return $result;
 	}
-	function add( $nombre,$proyecto,$prioridad,$estado ){
+	function add( $nombre,$proyecto,$prioridad,$estado,$comentario,$equipo){
 		$conn = $this->conectar();
 
-		$sql = "INSERT INTO `tareas` (`id`, `nombre`, `proyecto`, `prioridad`, `estado`) VALUES (NULL, '$nombre', $proyecto,$prioridad,$estado);";
+		$sql = "INSERT INTO `tareas` (`id`, `nombre`, `proyecto`, `prioridad`, `estado`, `comentario`, `equipo`) VALUES (NULL, '$nombre', $proyecto,$prioridad,$estado,'$comentario',$equipo);";
+		
 		$result = $conn->query($sql);
 		if($result){
 			$sql = "SELECT LAST_INSERT_ID();";
@@ -78,6 +79,8 @@ class tarea_con
 		$conn=$this->conectar();
 		$sql = "DELETE FROM `tareas` WHERE `tareas`.`id` = $id;";
 		$result = $conn->query($sql);
+		$sql = "DELETE FROM `notificaciones` WHERE `tarea` = $id;";
+		$conn->query($sql);
 		return $result;	
 	}
 	function cambiar_estado( $id ){

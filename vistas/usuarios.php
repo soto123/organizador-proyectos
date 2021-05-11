@@ -33,18 +33,20 @@
 					  <thead>
 					    <tr>
 					      <th scope="col">ID</th>
-					      <th scope="col">Nombre</th>
 					      <th scope="col">imagen</th>
+					      <th scope="col">Nombre</th>
 					      <th scope="col">correo</th>
+					      <th scope="col">Equipo</th>
 					    </tr>
 					  </thead>
 					  <tbody class="">
 
 					    <tr v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.id">
 					    	<th>{{item.id}}</th>
+					    	<td><img v-bind:src="item.imagen"></td>
 					    	<td>{{item.nombre}}</td>
-					    	<td>{{item.imagen}}</td>
 					    	<td>{{item.correo}}</td>
+					    	<td>{{item.equipo}}</td>
 					    </tr>
 					  </tbody>
 					</table>
@@ -56,6 +58,12 @@
 		<!-- <button v-on:click="getDatos">Reverse Message</button> -->
 	  	
 	</div>
+	<style>
+	    td img{
+	        max-width:150px;
+	        max-height:50px;
+	    }
+	</style>
 	<script type="text/javascript">
 	
 
@@ -81,7 +89,7 @@
 			       data_new = this.responseText;
 			    }
 			};
-			xhttp.open("GET", "http://localhost/hatch/organizador-proyectos/api/usuario/", false);
+			xhttp.open("GET", "http://proyectos.hatchtemuco.com/api/usuario/", false);
 			xhttp.send();
 			this.groceryList = JSON.parse(data_new);
 			console.log(this.data);

@@ -1,6 +1,6 @@
 <?php 
 require_once ("./global-variables.php");
-class usuario_con
+class notificacion_con
 {
 	protected $servername;
 	protected $username;
@@ -17,31 +17,21 @@ class usuario_con
 	// Create connection
 	protected function conectar(){
 		$conn = new mysqli($this->servername, $this->username, $this->password, $this->db);
+		
 		// Check connection
 		if ($conn->connect_error) {
 		    die("Connection failed: " . $conn->connect_error);
 		} 
-		$sql = "SELECT * FROM usuarios";
+		$sql = "SELECT * FROM notificaciones";
 		$result = $conn->query($sql);
-		
+		$conn->set_charset("utf8");
 		return $conn;
 	}
-	function get_usuarios(){
+	function get_notificaciones(){
 
 		$conn=$this->conectar();
 
-		$sql = "SELECT * FROM usuarios ORDER BY `usuarios`.`id` DESC";
-
-		$result = $conn->query($sql);
-		
-		return $result;	
-	}
-
-	function get_by_tipo( $tipo ){
-
-		$conn=$this->conectar();
-
-		$sql = "SELECT * FROM usuarios WHERE `tipo`=$tipo";
+		$sql = "SELECT * FROM notificaciones ORDER BY `notificaciones`.`id` DESC";
 
 		$result = $conn->query($sql);
 		
@@ -52,25 +42,46 @@ class usuario_con
 
 		$conn=$this->conectar();
 
-		$sql = "SELECT * FROM usuarios WHERE `id`=$id";
+		$sql = "SELECT * FROM notificaciones WHERE `id`=$id";
 
 		$result = $conn->query($sql);
-
+		
 		return $result;	
 	}
-	function update($id,$nombre,$corre,$imagen){
+	function get_by_tarea($tarea){
+
 		$conn=$this->conectar();
-		$sql = "UPDATE `usuarios` SET `imagen` = '$imagen', `nombre`='$nombre', `correo` = '$correo' WHERE `usuarios`.`id` = $id;";
+
+		$sql = "SELECT * FROM notificaciones WHERE `tarea`=$tarea";
+
+		$result = $conn->query($sql);
+		
+		return $result;	
+	}
+	function update($id,$usuario,$tarea){
+		$conn=$this->conectar();
+		$sql = "UPDATE `notificaciones` SET `tarea` = '$tarea', `usuario`='$usuario' WHERE `notificaciones`.`id` = $id;";
 
 		$result = $conn->query($sql);
 		return $result;	
 	}
-	function add($nombre,$correo,$imagen){
+	function add($usuario,$tarea){
 		$conn = $this->conectar();
 
-		$sql = "INSERT INTO `usuarios` (`id`, `nombre`, `correo`, `imagen`) VALUES (NULL, '$nombre', '$correo', '$imagen');";
+		$sql = "INSERT INTO `notificaciones` (`id`, `usuario`, `tarea`) VALUES (NULL, '$usuario', '$tarea');";
 		$result = $conn->query($sql);
+		if($result){
+			$sql = "SELECT LAST_INSERT_ID();";
+			$result = $conn->query($sql);
+		}
 		return $result;
+	}
+	function delete( $id ){
+		$conn=$this->conectar();
+		$sql = "DELETE FROM `notificaciones` WHERE `notificaciones`.`id` = $id;";
+
+		$result = $conn->query($sql);
+		return $result;	
 	}
 }
 ?>

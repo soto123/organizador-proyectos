@@ -19,7 +19,13 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 	${$_GET['objeto']} = new $_GET['objeto']();
 	if(${$_GET['objeto']}->get_by_id($_GET['id'])){
 		$func = 'set_'.$_GET['att'];
-		${$_GET['objeto']}->{$func}($_GET['att_v']);
+		var_dump($_POST);
+		
+		if(isset($_POST['att_v'])){
+			${$_GET['objeto']}->{$func}($_POST['att_v']);
+		}else{
+			${$_GET['objeto']}->{$func}($_GET['att_v']);	
+		}
 		var_dump(${$_GET['objeto']}->update());
 	}else{
 		echo "No existe";
@@ -33,7 +39,7 @@ if($_SERVER['REQUEST_METHOD'] == 'DELETE'){
 		${$_GET['objeto']}->{$func}($_POST[$field]);
 	}
 	echo(${$_GET['objeto']}->add());
-	http_response_code(201);	
+	http_response_code(201);
 }else if(isset($_GET) && $_GET != []){
 	if(isset($_GET['objeto'])){
 		include_once("class/".$_GET['objeto'].".php");
