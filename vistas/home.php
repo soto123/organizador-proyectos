@@ -27,24 +27,9 @@
 					<p class="h3">Proyectos</p>
 					<table class="table table-striped ">
 					  <thead>
-					    <tr>
-					      <th scope="col">ID</th>
-					      <th scope="col">Imagen</th>
-					      <th scope="col">Nombre</th>
-					      <th scope="col">Otro</th>
-					    </tr>
+					    <tr><th scope="col">ID</th><th scope="col">Imagen</th><th scope="col">Nombre</th><th scope="col">Otro</th></tr>
 					  </thead>
-					  <tbody class="" id="contenido-tabla">
-
-					    <!--
-					    <tr v-for="item in proyectos" v-bind:todo="item" v-bind:key="item.id">
-					    	<th>{{item.id}}</th>
-					    	<td><img :src="item.imagen"></td>
-					    	<td>{{item.nombre}}</td>
-					    	<td>{{get_estado_by_id(item)}} </td>
-					    </tr>
-						-->
-						
+					  <tbody class="" id="contenido-tabla">						
 					    <tr is="todo-item" v-for="item in proyectos" v-bind:key="item.id" v-bind:todo="item"></todo-item>
 					  </tbody>
 					</table>
