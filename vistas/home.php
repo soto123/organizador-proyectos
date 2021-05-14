@@ -20,33 +20,9 @@
 				<div class="bg-white pt-5 col-md-9 h-100 overflow-auto">
 					<p class="h3 pb-1">Inicio</p>
 					<div class="row pt-1 pb-2">
-						<div class="col-md-4 pl-5 pr-5 ">
-							<div class="card bg-light">
-						      <div class="card-body">
-						        <h5 class="card-title">Total de Proyectos:</h5>
-						        <p class="card-text h3">{{contar_proyectos}} activos.</p>
-						        <a href="#" class="btn btn-primary">Ver más...</a>
-						      </div>
-						    </div>
-						</div>
-						<div class="col-md-4 pl-5 pr-5 ">
-							<div class="card bg-light">
-						      <div class="card-body">
-						        <h5 class="card-title">Usuarios activos:</h5>
-						        <p class="card-text h3">{{contar_usuarios}} activos.</p>
-						        <a href="#" class="btn btn-primary">Ver más...</a>
-						      </div>
-						    </div>
-						</div>
-						<div class="col-md-4 pl-5 pr-5 ">
-							<div class="card bg-light">
-						      <div class="card-body">
-						        <h5 class="card-title">Tareas pendientes:</h5>
-						        <p class="card-text h3">{{contar_tareas_pendientes}} activos.</p>
-						        <a href="#" class="btn btn-primary">Ver más...</a>
-						      </div>
-						    </div>
-						</div>
+						<tarjeta-dashboard v-bind:contador="contar_proyectos">proyectos</tarjeta-dashboard>
+						<tarjeta-dashboard v-bind:contador="contar_usuarios">usuarios</tarjeta-dashboard>
+						<tarjeta-dashboard v-bind:contador="contar_tareas_pendientes">tareas pendientes</tarjeta-dashboard>
 					</div>
 					<p class="h3">Proyectos</p>
 					<table class="table table-striped ">
@@ -89,12 +65,31 @@
 	</style>
 	<script type="text/javascript">
 	
-		
-	Vue.component('todo-item', {
+	var todoItem = {
 	  props: ['todo'],
-	  template: '<tr><th>{{todo.id}}</th><td>{{todo.nombre}}</td><td>{{todo.imagen}}</td><td>{{todo.estado}}</td></tr>'
-	});
+	  template: `
+	  <tr class="fila-proyecto">
+	  	<th>{{todo.id}}</th>
+	  	<td>{{todo.nombre}}</td>
+	  	<td><img :src="todo.imagen"></td>
+	  	<td>{{todo.estado}}</td>
+	 </tr>`
+	};
 
+	var tarjetaDashboard = {
+		props: ['contador'],
+		template: `
+			<div class="col-md-4 pl-2 pr-2 tarjeta-dashboard">
+				<div class="card bg-light">
+			      <div class="card-body">
+			        <h5 class="card-title">Total de <slot></slot>:</h5>
+			        <p class="card-text h3">{{contador}} activos.</p>
+			        <a href="#" class="btn btn-primary">Ver más...</a>
+			      </div>
+			    </div>
+			</div>
+		`
+	}
 	var app7 = new Vue({
 	  	el: '#app-7',
 	  	data: {
@@ -186,6 +181,10 @@
 			xhttp4.open("GET", "http://proyectos.hatchtemuco.com/api/usuario/", false);
 			xhttp4.send();
 			this.usuarios = JSON.parse(data_new4);	
+		},
+		components:{
+			'todo-item' : todoItem,
+			'tarjeta-dashboard':tarjetaDashboard,
 		}
 	});
 	
