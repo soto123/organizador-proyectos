@@ -38,8 +38,6 @@
 			</div>
 		
 		</div>
-		<!-- <button v-on:click="getDatos">Reverse Message</button> -->
-	  	
 	</div>
 
 	<style>
@@ -143,7 +141,7 @@
 			xhttp2.open("GET", "http://proyectos.hatchtemuco.com/api/estado/", false);
 			xhttp2.send();
 			this.estados = JSON.parse(data_new2);
-		  var data_new3 = '';
+		  	var data_new3 = '';
 			var xhttp3 = new XMLHttpRequest();
 			xhttp3.onreadystatechange = function() {
 			    if (this.readyState == 4 && this.status == 200) {
