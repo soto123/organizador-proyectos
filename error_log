@@ -1,0 +1,719 @@
+[18-Dec-2020 01:42:30 Europe/Madrid] PHP Warning:  mysqli::__construct(): (HY000/2002): No such file or directory in /home2/hatchtem/public_html/proyectos/conn/proyectos-con.php on line 19
+[18-Dec-2020 03:41:52 Europe/Madrid] PHP Fatal error:  Cannot redeclare tarea::set_estado() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 37
+[18-Dec-2020 04:35:14 Europe/Madrid] PHP Warning:  include_once(class/tarea/6.php): failed to open stream: No such file or directory in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 04:35:14 Europe/Madrid] PHP Warning:  include_once(): Failed opening 'class/tarea/6.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 04:35:14 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'tarea/6' not found in /home2/hatchtem/public_html/proyectos/api.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/api.php on line 19
+[18-Dec-2020 04:35:42 Europe/Madrid] PHP Warning:  include_once(class/tarea/13.php): failed to open stream: No such file or directory in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 04:35:42 Europe/Madrid] PHP Warning:  include_once(): Failed opening 'class/tarea/13.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 04:35:42 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'tarea/13' not found in /home2/hatchtem/public_html/proyectos/api.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/api.php on line 19
+[18-Dec-2020 04:35:44 Europe/Madrid] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home2/hatchtem/public_html/proyectos/api.php on line 35
+[18-Dec-2020 05:02:18 Europe/Madrid] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home2/hatchtem/public_html/proyectos/api.php on line 35
+[18-Dec-2020 18:25:13 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:25:27 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:25:53 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:29:49 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:32:51 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:33:32 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:33:39 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:34:22 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:34:50 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:35:01 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:35:10 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:38:23 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:38:54 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:38:59 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:41:37 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 18:42:08 Europe/Madrid] PHP Warning:  Invalid argument supplied for foreach() in /home2/hatchtem/public_html/proyectos/class/tarea.php on line 115
+[18-Dec-2020 19:12:24 Europe/Madrid] PHP Warning:  include_once(class/tarea/23.php): failed to open stream: No such file or directory in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 19:12:24 Europe/Madrid] PHP Warning:  include_once(): Failed opening 'class/tarea/23.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home2/hatchtem/public_html/proyectos/api.php on line 18
+[18-Dec-2020 19:12:24 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'tarea/23' not found in /home2/hatchtem/public_html/proyectos/api.php:19
+Stack trace:
+#0 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/api.php on line 19
+[18-Dec-2020 19:14:04 Europe/Madrid] PHP Notice:  Undefined index: att_v in /home2/hatchtem/public_html/proyectos/api.php on line 25
+[18-Dec-2020 19:19:01 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:01 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:01 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:02 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:02 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:02 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:12 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:49 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:49 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:49 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:58 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:58 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:19:59 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:00 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:01 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:01 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:02 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:08 Europe/Madrid] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home2/hatchtem/public_html/proyectos/api.php on line 23
+[18-Dec-2020 19:20:25 Europe/Madrid] PHP Notice:  Undefined index: att_v in /home2/hatchtem/public_html/proyectos/api.php on line 26
+[18-Dec-2020 19:20:53 Europe/Madrid] PHP Notice:  Undefined variable: _PATCH in /home2/hatchtem/public_html/proyectos/api.php on line 22
+[18-Dec-2020 19:20:53 Europe/Madrid] PHP Notice:  Undefined index: att_v in /home2/hatchtem/public_html/proyectos/api.php on line 26
+[18-Dec-2020 19:23:52 Europe/Madrid] PHP Fatal error:  Uncaught Error: Call to undefined method tarea::set_att_v() in /home2/hatchtem/public_html/proyectos/api.php:39
+Stack trace:
+#0 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/api.php on line 39
+[18-Dec-2020 19:42:09 Europe/Madrid] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home2/hatchtem/public_html/proyectos/api.php on line 41
+[23-Dec-2020 17:45:06 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:07 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:08 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:09 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:10 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:11 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:12 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:13 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:14 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:15 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:16 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:17 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:18 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:19 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:20 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:21 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:22 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:23 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:24 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:25 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:26 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:27 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:28 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:29 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:30 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:31 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:32 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:33 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:34 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:35 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:36 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:37 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:38 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:39 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:40 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:41 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:42 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:43 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:44 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:45 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:46 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:47 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:48 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:49 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:50 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:51 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:52 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:53 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:54 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:55 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:56 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:57 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:58 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:45:59 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:00 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:01 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:02 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:03 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:04 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:05 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:06 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:07 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:08 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:09 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:10 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:11 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:12 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:13 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:14 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:15 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:16 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:17 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:18 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:19 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:20 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:21 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:22 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:23 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:24 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:25 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:26 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:27 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:28 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:29 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:30 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:31 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:32 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:33 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:34 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:35 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:36 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:37 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:38 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:38 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:39 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:40 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:41 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:42 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:43 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:44 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:45 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:46 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:46:48 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:47:58 Europe/Madrid] PHP Fatal error:  Uncaught Error: Class 'equipo_con' not found in /home2/hatchtem/public_html/proyectos/class/equipo.php:52
+Stack trace:
+#0 /home2/hatchtem/public_html/proyectos/api.php(76): equipo->get_all()
+#1 {main}
+  thrown in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 52
+[23-Dec-2020 17:48:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:26 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:26 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:26 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:28 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:28 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:28 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:51 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:51 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:51 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:53 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:53 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:53 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:55 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:55 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:55 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:57 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:57 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:57 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:59 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:59 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:48:59 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:01 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:01 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:01 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:03 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:03 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:03 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:05 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:05 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:05 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:07 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:07 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:07 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:09 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:09 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:09 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:11 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:11 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:11 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:13 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:13 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:13 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:15 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:15 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:15 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:18 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:18 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:18 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:20 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:20 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:20 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:22 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:22 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:22 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:23 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:23 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:23 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:25 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:27 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:27 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:27 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:29 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:31 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:33 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:35 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:37 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:39 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:41 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:43 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:45 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:47 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[23-Dec-2020 17:49:49 Europe/Madrid] PHP Notice:  Undefined index: coordinador in /home2/hatchtem/public_html/proyectos/class/equipo.php on line 58
+[21-Jan-2021 16:05:51 Europe/Madrid] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home2/hatchtem/public_html/proyectos/api.php on line 41
+[21-Jan-2021 16:08:05 Europe/Madrid] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home2/hatchtem/public_html/proyectos/api.php on line 41

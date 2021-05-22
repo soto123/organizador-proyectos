@@ -37,6 +37,17 @@ class usuario_con
 		return $result;	
 	}
 
+	function get_by_tipo( $tipo ){
+
+		$conn=$this->conectar();
+
+		$sql = "SELECT * FROM usuarios WHERE `tipo`=$tipo";
+
+		$result = $conn->query($sql);
+		
+		return $result;	
+	}
+
 	function get_by_id($id){
 
 		$conn=$this->conectar();
@@ -44,7 +55,7 @@ class usuario_con
 		$sql = "SELECT * FROM usuarios WHERE `id`=$id";
 
 		$result = $conn->query($sql);
-		
+
 		return $result;	
 	}
 	function update($id,$nombre,$corre,$imagen){

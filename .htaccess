@@ -1,11 +1,29 @@
 Options +FollowSymLinks
 RewriteEngine on
-RewriteBase /organizador-proyectos/
+RewriteBase /
 
-RewriteRule ^api/(.*)/(.*)/(.*)/update/(.*)/$ api.php?objeto=$1&id=$2&att=$3&update=1&val=$4 [L]
+RewriteRule ^api/(.*)/(.*)/(.*)/(.*)/$ api.php?objeto=$1&id=$2&att=$3&att_v=$4 [L]
 RewriteRule ^api/(.*)/(.*)/(.*)/$ api.php?objeto=$1&id=$2&att=$3 [L]
 RewriteRule ^api/(.*)/(.*)/$ api.php?objeto=$1&id=$2 [L]
 RewriteRule ^api/(.*)/$ api.php?objeto=$1 [L]
+
+RewriteRule ^vistas/home$ vistas/home.php [L]
+RewriteRule ^vistas/home/$ vistas/home.php [L]
+RewriteRule ^vistas/equipos$ vistas/equipos.php [L]
+RewriteRule ^vistas/equipos/$ vistas/equipos.php [L]
+RewriteRule ^vistas/usuarios$ vistas/usuarios.php [L]
+RewriteRule ^vistas/usuarios/$ vistas/usuarios.php [L]
+RewriteRule ^vistas/proyectos$ vistas/proyectos.php [L]
+RewriteRule ^vistas/proyectos/$ vistas/proyectos.php [L]
+RewriteRule ^vistas/estados$ vistas/estados.php [L]
+RewriteRule ^vistas/estados/$ vistas/estados.php [L]
+RewriteRule ^vistas$ vistas/home.php [L]
+RewriteRule ^vistas/$ vistas/home.php [L]
+
+RewriteRule ^send-email/(.*)/$ send-email.php?tarea=$1 [L]
+RewriteRule ^enviar-comentario/$ enviar-comentario.php [L]
+
+RewriteRule ^cliente$ cliente.php [L]
 
 
 RewriteRule ^tablero$ tablero.php [L]

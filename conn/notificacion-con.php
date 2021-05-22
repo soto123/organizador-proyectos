@@ -1,6 +1,6 @@
 <?php 
 require_once ("./global-variables.php");
-class proyecto_con
+class notificacion_con
 {
 	protected $servername;
 	protected $username;
@@ -17,20 +17,21 @@ class proyecto_con
 	// Create connection
 	protected function conectar(){
 		$conn = new mysqli($this->servername, $this->username, $this->password, $this->db);
+		
 		// Check connection
 		if ($conn->connect_error) {
 		    die("Connection failed: " . $conn->connect_error);
 		} 
-		$sql = "SELECT * FROM proyectos";
+		$sql = "SELECT * FROM notificaciones";
 		$result = $conn->query($sql);
-		
+		$conn->set_charset("utf8");
 		return $conn;
 	}
-	function get_proyectos(){
+	function get_notificaciones(){
 
 		$conn=$this->conectar();
 
-		$sql = "SELECT * FROM proyectos ORDER BY `proyectos`.`id` DESC";
+		$sql = "SELECT * FROM notificaciones ORDER BY `notificaciones`.`id` DESC";
 
 		$result = $conn->query($sql);
 		
@@ -41,23 +42,33 @@ class proyecto_con
 
 		$conn=$this->conectar();
 
-		$sql = "SELECT * FROM proyectos WHERE `proyectos`.`id`=$id";
+		$sql = "SELECT * FROM notificaciones WHERE `id`=$id";
 
 		$result = $conn->query($sql);
 		
 		return $result;	
 	}
-	function update($id,$nombre,$imagen,$estado){
+	function get_by_tarea($tarea){
+
 		$conn=$this->conectar();
-		$sql = "UPDATE `proyectos` SET `imagen` = '$imagen', `estado` = '$estado', `nombre`='$nombre' WHERE `proyectos`.`id` = $id;";
+
+		$sql = "SELECT * FROM notificaciones WHERE `tarea`=$tarea";
+
+		$result = $conn->query($sql);
+		
+		return $result;	
+	}
+	function update($id,$usuario,$tarea){
+		$conn=$this->conectar();
+		$sql = "UPDATE `notificaciones` SET `tarea` = '$tarea', `usuario`='$usuario' WHERE `notificaciones`.`id` = $id;";
 
 		$result = $conn->query($sql);
 		return $result;	
 	}
-	function add( $nombre,$imagen,$estado ){
+	function add($usuario,$tarea){
 		$conn = $this->conectar();
 
-		$sql = "INSERT INTO `proyectos` (`id`, `nombre`, `imagen`, `estado`) VALUES (NULL, '$nombre', '$imagen',0);";
+		$sql = "INSERT INTO `notificaciones` (`id`, `usuario`, `tarea`) VALUES (NULL, '$usuario', '$tarea');";
 		$result = $conn->query($sql);
 		if($result){
 			$sql = "SELECT LAST_INSERT_ID();";
@@ -67,14 +78,10 @@ class proyecto_con
 	}
 	function delete( $id ){
 		$conn=$this->conectar();
-		$sql = "DELETE FROM `proyectos` WHERE `proyectos`.`id` = $id;";
+		$sql = "DELETE FROM `notificaciones` WHERE `notificaciones`.`id` = $id;";
 
 		$result = $conn->query($sql);
 		return $result;	
 	}
-	function subir_etapa( $id ){
-		
-	}
-	
 }
 ?>

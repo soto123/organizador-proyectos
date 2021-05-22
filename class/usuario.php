@@ -7,12 +7,15 @@ class usuario
 	protected $nombre;
 	protected $correo;
 	protected $imagen;
+	protected $tipo;
+	protected $equipo;
 
 	function __construct() {
 	    $this->id = 0;
 	    $this->nombre = '';
 	    $this->correo = '';
 	    $this->imagen = '';
+	    $this->tipo = 0;
 	}
 
 
@@ -28,6 +31,12 @@ class usuario
 	function set_imagen($imagen){
 		$this->imagen = $imagen;
 	}
+	function set_tipo($tipo){
+		$this->tipo = $tipo;
+	}
+	function set_equipo($equipo){
+		$this->equipo = $equipo;
+	}
 
 
 	function get_id(){
@@ -42,6 +51,12 @@ class usuario
 	function get_imagen(){
 		return $this->imagen;
 	}
+	function get_tipo(){
+		return $this->tipo;
+	}
+	function get_equipo(){
+		return $this->equipo;
+	}
 
 	function get_by_id( $id ){
 		$conn = new usuario_con();
@@ -51,7 +66,27 @@ class usuario
 			$this->nombre = $publicacion['nombre'];
 			$this->imagen = $publicacion['imagen'];
 			$this->correo = $publicacion['correo'];
+			$this->tipo = $publicacion['tipo'];
+			$this->equipo = $publicacion['equipo'];
+			return true;
 		}
+		return false;
+	}
+	function get_by_tipo( $tipo ){
+		$conn = new usuario_con();
+		$this->tipo = $tipo;
+		$results = $conn->get_by_tipo($this->tipo);
+		$usuarios = [];
+		foreach ($results as $result) {
+			$usuario = new usuario();
+			$usuario->set_id($result['id']);
+			$usuario->set_nombre($result['nombre']);
+			$usuario->set_imagen($result['imagen']);
+			$usuario->set_correo($result['correo']);
+			$usuario->set_equipo($result['equipo']);
+			$usuarios[] = $usuario;
+		}
+		return $usuarios;
 	}
 
 	function get_all(){
@@ -65,6 +100,7 @@ class usuario
 			$usuario->set_nombre($result['nombre']);
 			$usuario->set_imagen($result['imagen']);
 			$usuario->set_correo($result['correo']);
+			$usuario->set_equipo($result['equipo']);
 			$usuarios[] = $usuario;
 		}
 		return $usuarios;
@@ -72,12 +108,12 @@ class usuario
 	}
 	function add(){
 		$conn = new usuario_con();
-		return $conn->add($this->nombre, $this->imagen, $this->correo);
+		return $conn->add($this->nombre, $this->imagen, $this->correo, $this->equipo);
 
 	}
 	function update(){
 		$conn = new usuario_con();
-		return $conn->update($this->id,$this->nombre,$this->imagen, $this->correo);
+		return $conn->update($this->id,$this->nombre,$this->imagen, $this->correo, $this->equipo);
 	}
 
 	function object_to_json(){
@@ -86,6 +122,7 @@ class usuario
 		$objeto["nombre"] = $this->nombre;
 		$objeto["imagen"] = $this->imagen;
 		$objeto["correo"] = $this->correo;
+		$objeto["equipo"] = $this->equipo;
 
 		return $objeto;
 	}
