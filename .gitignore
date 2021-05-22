@@ -1,2 +1,4 @@
 
 sftp-config.json
+error_log
+global-variables.php
